@@ -14,9 +14,9 @@ RSpec.describe Invitation, type: :model do
     expect(right_message_invitation).to be_valid
   end
 
-  it "is expected to be linked to a cycle" do
-    right_id_invitation = build :invitation, cycle_id: cycle.id
-      
-    expect(right_id_invitation).to be_valid
+  it "is expected to have a name" do
+    right_name_invitation = build :invitation, name: "name"
+    expect(right_name_invitation).to be_valid
   end
+  
 end
