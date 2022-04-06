@@ -17,8 +17,8 @@
   position: relative;
   border-radius: 3px;
   width: 100%;
-  max-width: 20rem;
-  padding: 1rem;
+  max-width: 25rem;
+  padding: 1.5rem;
   background-color: #262626;
 }
 
@@ -40,4 +40,54 @@
   width: 1.25rem;
   height: 1.25rem;
   color: var(--primary-color);
+}
+
+
+/* Added CSS */
+
+.modal__content .btn-submit{
+  width: 75%;
+  text-align: center;
+  background-color: #1bfdc8;
+  padding: 9px 22px;
+  margin-left: 12%;
+  font-size: 0.7rem;
+  color: #262626;
+  border: 1px solid #1bfdc8;
+  border-radius: 20px;
+}
+
+.modal__content input{
+  width: 90%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+.modal__content textarea{
+  width: 90%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+hr.white-bar {
+  border-top: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.modal__content h6{
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  margin-bottom: 5px;
+}
+
+.modal__content li{
+  font-size: 0.7rem;
+  font-weight: 400;
+  margin-left: -2em;
 }

@@ -1,4 +1,7 @@
+require 'mail' # we require the ruby object mail
+
 class InvitationsController < ApplicationController
+ 
   def new 
     @invitation = Invitation.new
     @cycle = Cycle.find(params[:cycle_id])
@@ -21,6 +24,6 @@ class InvitationsController < ApplicationController
   private
 
   def invitations_params
-    params.require(:email, :message, :cycle_id, :name)
+    params.require(:email)
   end
 end
