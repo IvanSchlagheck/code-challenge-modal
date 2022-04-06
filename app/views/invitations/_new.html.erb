@@ -1,0 +1,16 @@
+<%= form_with mode: @invitation, url: cycle_invitations_path, class: "invitations-form" do |f| %>
+    <%= f.label 'Share cycle with a new Customer' %>
+    <%= f.text_field :email, placeholder: "Email Addresses...*"%>
+    <hr class="white-bar">
+    <%= f.label 'Want to include a message with the invite?' %>
+    <%= f.text_area :message, placeholder: "Please enter your message..." %>
+    <hr class="white-bar">
+    <h6>You are about to share with the individuals above:</h6>
+    <ul>
+      <li>
+        <%= @cycle.name %>
+      </li>
+    </ul>
+    <hr class="white-bar">
+    <%= submit_tag "SEND INVITATION", class: 'btn-submit' %>
+<% end %>
