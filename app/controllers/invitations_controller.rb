@@ -15,7 +15,7 @@ class InvitationsController < ApplicationController
     @invitation = Invitation.new(invitations_params)
 
     if @invitation.save
-        redirect_to cycles_path , notice: 'All Set! Your invitation was created successfully!'
+        redirect_to cycles_path
     else
         redirect_to cycles_path 
     end
@@ -24,6 +24,6 @@ class InvitationsController < ApplicationController
   private
 
   def invitations_params
-    params.require(:email)
+    params.permit(:email, :cycle_id, :message)
   end
 end
